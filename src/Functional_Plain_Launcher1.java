@@ -1,7 +1,7 @@
 import javax.swing.*;
 
-public class Functional_Plain_Launcher {
-    public static String ID = "Functional_Plain_Launcher";
+public class Functional_Plain_Launcher1 {
+    public static String ID = "Functional_Plain_Launcher1";
     public static String version = "0.0.2";
     public static int fgsdsgsdfdss =0;
     public static void dice(){
