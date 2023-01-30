@@ -3,11 +3,11 @@ import javax.swing.*;
 public class Functional_Plain_Launcher1 {
     public static String ID = "Functional_Plain_Launcher1";
     public static String version = "0.0.2";
-    public static int fgsdsgsdfdss =0;
+    //public static int f =0;
 
 
     //抽取随机数字
-    public static void dice(){
+    public static void destiny(){
         int a = (int) (Math.random()*100);
         //System.out.println("type=");
 
@@ -53,7 +53,7 @@ public class Functional_Plain_Launcher1 {
     }
 
 
-    //创建窗口类的对象
+    //创建窗口类
     public static void window(){
         //创建窗口
         JFrame L = new JFrame();
@@ -69,18 +69,16 @@ public class Functional_Plain_Launcher1 {
         L.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
     }
 
-    public static void main(String[] args) {
-
-        window();
+    public static void main (String[] args) {
+        //创建窗口类对象
+        Functional_Plain_Launcher1.window();
 
 
 
         for(int b = 0;b<=100;b+=1){
-            if (fgsdsgsdfdss ==0){}else{}
-            fgsdsgsdfdss += 1;
             System.out.println("\n");
             System.out.println(b);
-            dice();
+            destiny();
         }
 
         System.out.println("ID:" + ID);
