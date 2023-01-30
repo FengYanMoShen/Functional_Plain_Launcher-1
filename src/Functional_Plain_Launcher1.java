@@ -4,6 +4,9 @@ public class Functional_Plain_Launcher1 {
     public static String ID = "Functional_Plain_Launcher1";
     public static String version = "0.0.2";
     public static int fgsdsgsdfdss =0;
+
+
+    //抽取随机数字
     public static void dice(){
         int a = (int) (Math.random()*100);
         //System.out.println("type=");
@@ -23,7 +26,7 @@ public class Functional_Plain_Launcher1 {
 
         if (a == 0) {
             System.out.println("运气万中无一，出门彩票中亿");
-            fgsdsgsdfdss += 1;
+
         }else if(0<=s && 10>s){
             System.out.println("5");
         }else if(10<=s && 20>s){
@@ -47,12 +50,11 @@ public class Functional_Plain_Launcher1 {
         }else{
             System.out.println("95");
         }
-        System.out.println(fgsdsgsdfdss);
     }
 
-    public static void main(String[] args) {
 
-
+    //创建窗口类的对象
+    public static void window(){
         //创建窗口
         JFrame L = new JFrame();
         //窗口标题
@@ -65,14 +67,21 @@ public class Functional_Plain_Launcher1 {
         L.setVisible(true);
         //随关随停
         L.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+    }
 
-/*
+    public static void main(String[] args) {
+
+        window();
+
+
+
         for(int b = 0;b<=100;b+=1){
+            if (fgsdsgsdfdss ==0){}else{}
+            fgsdsgsdfdss += 1;
             System.out.println("\n");
             System.out.println(b);
             dice();
         }
-*/
 
         System.out.println("ID:" + ID);
         System.out.println("version:" + version);
