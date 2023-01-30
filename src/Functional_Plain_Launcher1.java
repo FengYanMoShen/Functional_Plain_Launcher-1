@@ -15,7 +15,7 @@ public class Functional_Plain_Launcher1 {
         int min = 0; // 定义随机数的最小值
         int max = 100; // 定义随机数的最大值
         // 产生一个0~100的数
-        int s = (int) min + (int) (Math.random() * (max - min));
+        int s = min + (int) (Math.random() * (max - min));
         if (s % 2 == 0) {
             //如果是偶数就输出
             System.out.println("随机数是：" + s);
