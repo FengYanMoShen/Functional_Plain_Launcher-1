@@ -3,13 +3,18 @@ import javax.swing.*;
 public class Functional_Plain_Launcher1 {
     public static String ID = "Functional_Plain_Launcher1";
     public static String version = "0.0.2";
-    //public static int f =0;
-
+    public void author(){
+        String main_author = "FengYanMoShen";
+        String other_author = "FengYanMoShen";
+    }
+    public void information(){
+        System.out.println("ID:" + ID);
+        System.out.println("version:" + version);
+    }
 
     //抽取随机数字
     public static void destiny(){
         int a = (int) (Math.random()*100);
-        //System.out.println("type=");
 
 
         int min = 0; // 定义随机数的最小值
@@ -26,7 +31,6 @@ public class Functional_Plain_Launcher1 {
 
         if (a == 0) {
             System.out.println("运气万中无一，出门彩票中亿");
-
         }else if(0<=s && 10>s){
             System.out.println("5");
         }else if(10<=s && 20>s){
@@ -73,16 +77,12 @@ public class Functional_Plain_Launcher1 {
         //创建窗口类对象
         Functional_Plain_Launcher1.window();
 
-
-
         for(int b = 0;b<=100;b+=1){
             System.out.println("\n");
             System.out.println(b);
             destiny();
         }
 
-        System.out.println("ID:" + ID);
-        System.out.println("version:" + version);
 
 
 
