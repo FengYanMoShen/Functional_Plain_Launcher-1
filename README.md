@@ -1,10 +1,10 @@
-# Functional_Plain_Launcher1-1
+# Functional_Plain_Launcher1
 
-Functional_Plain_Launcher1-1
+Functional_Plain_Launcher1
 
 
-## Web
-https://github.com/FengYanMoShen/Functional_Plain_Launcher-1/tree/master
+## 网站
+https://github.com/FengYanMoShen/Functional_Plain_Launcher-1
 
 ## 说明
 上传者/修改者 这一栏格式如下:  
