@@ -1,5 +1,6 @@
 import javax.swing.*;
 
+
 public class Functional_Plain_Launcher1 {
     public static String ID = "Functional_Plain_Launcher1";
     public static String version = "0.0.2";
@@ -78,7 +79,6 @@ public class Functional_Plain_Launcher1 {
         //创建窗口类对象
         Functional_Plain_Launcher1.window();
         Functional_Plain_Launcher1.information();
-
         for(int b = 0;b<=100;b+=1){
             System.out.println("\n");
             System.out.println(b);
