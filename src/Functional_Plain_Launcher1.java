@@ -52,9 +52,7 @@ public class Functional_Plain_Launcher1 {
             System.out.println("75");
         }else if(80<=s && 90>s){
             System.out.println("85");
-        }else if(90<=s && 100>s){
-            System.out.println("95");
-        }else{
+        }else{/*(90<=s && 100>s)*/
             System.out.println("95");
         }
     }
@@ -86,6 +84,7 @@ public class Functional_Plain_Launcher1 {
             System.out.println(b);
             destiny();
         }
+
 
 
 
