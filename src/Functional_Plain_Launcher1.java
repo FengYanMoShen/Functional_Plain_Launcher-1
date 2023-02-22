@@ -3,13 +3,16 @@ import javax.swing.*;
 public class Functional_Plain_Launcher1 {
     public static String ID = "Functional_Plain_Launcher1";
     public static String version = "0.0.2";
-    public void author(){
-        String main_author = "FengYanMoShen";
-        String other_author = "FengYanMoShen";
+    public static String main_author = "FengYanMoShen";
+    public static String other_author = "FengYanMoShen";
+    public static void author(){
+        System.out.println("main_author:" + main_author);
+        System.out.println("other_author:" + other_author);
     }
-    public void information(){
+    public static void information(){
         System.out.println("ID:" + ID);
         System.out.println("version:" + version);
+        author();
     }
 
     //抽取随机数字
@@ -76,6 +79,7 @@ public class Functional_Plain_Launcher1 {
     public static void main (String[] args) {
         //创建窗口类对象
         Functional_Plain_Launcher1.window();
+        Functional_Plain_Launcher1.information();
 
         for(int b = 0;b<=100;b+=1){
             System.out.println("\n");
