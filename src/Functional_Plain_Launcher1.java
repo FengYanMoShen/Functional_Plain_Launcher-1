@@ -1,7 +1,8 @@
 import javax.swing.*;
+import java.util.Scanner;
 
 
-public class Functional_Plain_Launcher1 {
+public class Functional_Plain_Launcher1{
     public static String ID = "Functional_Plain_Launcher1";
     public static String version = "0.0.2";
     public static String main_author = "FengYanMoShen";
@@ -58,7 +59,6 @@ public class Functional_Plain_Launcher1 {
         }
     }
 
-
     //创建窗口类
     public static void window(){
         //创建窗口
@@ -74,15 +74,120 @@ public class Functional_Plain_Launcher1 {
         //随关随停
         L.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
     }
+//    public static void square(int radix, int sexponential)/*平方*/{
+//        System.out.println("警告：该square方法无法计算(x(x<0))^0的值");
+//        double final_number = 1.0;
+//
+//        if (radix == 0 && sexponential == 0) {
+//            System.out.println("没有意义");
+//        } else if (radix == 0 && sexponential != 0) {
+//            System.out.println(0);
+//        } else if (radix > 0 && sexponential < 0) {
+//            while(sexponential < 0) {
+//                final_number *= radix;
+//                sexponential++;
+//            }
+//            final_number *= (1.0/final_number);
+//            System.out.println(final_number);
+//        } else if (radix > 0 && sexponential > 0) {
+//            while(sexponential > 0) {
+//                final_number *= radix;
+//                sexponential--;
+//            }
+//            System.out.println((int)final_number);
+//        } else if(radix > 0 && sexponential == 0) {
+//            System.out.println(1);
+//        } else if(radix < 0 && sexponential > 0) {
+//            radix = -radix;
+//            while(sexponential > 0) {
+//                final_number *= radix;
+//                sexponential--;
+//            }
+//            final_number = -final_number;
+//            System.out.println((int)final_number);
+//        } else if(radix < 0 && sexponential < 0) {
+//            radix = -radix;
+//            while(sexponential < 0) {
+//                final_number *= radix;
+//                sexponential++;
+//            }
+//            final_number *= -(1.0/final_number);
+//            System.out.println(final_number);
+//        } else if(radix < 0 && sexponential == 0) {
+//            System.out.println(1);
+//        }
+//    }
+
+    public static void square(int radix, int sexponential)/*平方*/{
+        System.out.println("警告：该square方法无法计算(x(x<0))^0的值");
+        double final_number = 1.0;
+
+        if (radix == 0 && sexponential == 0) {
+            System.out.println("没有意义");
+        } else if (radix == 0) {
+            System.out.println(0);
+        } else if (radix > 0 && sexponential < 0) {
+            while(sexponential < 0) {
+                final_number *= radix;
+                sexponential++;
+            }
+            final_number *= (1.0/final_number);
+            System.out.println(final_number);
+        } else if (radix > 0 && sexponential > 0) {
+            while(sexponential > 0) {
+                final_number *= radix;
+                sexponential--;
+            }
+            System.out.println((int)final_number);
+        } else if(radix > 0) {
+            System.out.println(1);
+        } else if(sexponential > 0) {
+            radix = -radix;
+            while(sexponential > 0) {
+                final_number *= radix;
+                sexponential--;
+            }
+            final_number = -final_number;
+            System.out.println((int)final_number);
+        } else if(sexponential < 0) {
+            radix = -radix;
+            while(sexponential < 0) {
+                final_number *= radix;
+                sexponential++;
+            }
+            final_number *= -(1.0/final_number);
+            System.out.println(final_number);
+        } else{
+            System.out.println(1);
+        }
+    }
+
 
     public static void main (String[] args) {
         //创建窗口类对象
         Functional_Plain_Launcher1.window();
         Functional_Plain_Launcher1.information();
+/*
         for(int b = 0;b<=100;b+=1){
             System.out.println("\n");
             System.out.println(b);
             destiny();
+
+        }
+*/
+        Scanner input_1 = new Scanner(System.in);
+        Scanner input_2 = new Scanner(System.in);
+        Scanner input_3 = new Scanner(System.in);
+        System.out.println("请输入字符串（nextLine）：");
+        int str1 = input_1.nextInt();
+        int str2 = input_2.nextInt();
+        int str3 = input_3.nextInt();
+        System.out.println(str1);
+        System.out.println(str2);
+
+        while (str3 !=0){
+            square(str1,str2);
+            str3 = 0;
         }
 
 
