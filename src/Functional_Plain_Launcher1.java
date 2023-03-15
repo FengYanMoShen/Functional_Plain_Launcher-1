@@ -1,5 +1,8 @@
 import javax.swing.*;
+import java.awt.*;
 import java.util.Scanner;
+
+import static javax.swing.WindowConstants.EXIT_ON_CLOSE;
 
 public class Functional_Plain_Launcher1{
     public static String ID = "Functional_Plain_Launcher1";
@@ -36,31 +39,35 @@ public class Functional_Plain_Launcher1{
     }
 
     //创建窗口类
-    public static void window(){
+    public static void window() {
         //创建窗口
-        JFrame L = new JFrame();
+        JFrame frame = new JFrame();
         //窗口标题
-        L.setTitle(ID);
+        frame.setTitle(ID);
         //窗口大小
-        L.setSize(800,610);
+        frame.setSize(800,610);
         //居中
-        L.setLocationRelativeTo(null);
+        frame.setLocationRelativeTo(null);
         //窗口可见
-        L.setVisible(true);
+        frame.setVisible(true);
         //随关随停
-        L.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(EXIT_ON_CLOSE);
+
+
+        // 创建一个面板
+        JPanel panel = new JPanel(new BorderLayout());
 
         // 创建一个标签
-        JLabel label = new JLabel("欢迎使用Java窗口");
+        JLabel label = new JLabel("欢迎使用 Java 窗口");
+        panel.add(label, BorderLayout.CENTER);
 
         // 创建一个按钮
         JButton button = new JButton("点击我");
-        // 设置按钮的位置
-        button.setBounds(5, 5, 0, 0);
+        panel.add(button, BorderLayout.NORTH);
 
-        // 将标签和按钮添加到窗口中
-        L.add(label);
-        L.add(button);
+        // 将面板添加到窗口中
+        frame.add(panel);
+
     }
 
     public static void main (String[] args) {
