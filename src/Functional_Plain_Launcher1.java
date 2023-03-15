@@ -1,7 +1,6 @@
 import javax.swing.*;
 import java.util.Scanner;
 
-
 public class Functional_Plain_Launcher1{
     public static String ID = "Functional_Plain_Launcher1";
     public static String version = "0.0.2";
@@ -36,7 +35,6 @@ public class Functional_Plain_Launcher1{
         System.out.println(outputNum);
     }
 
-
     //创建窗口类
     public static void window(){
         //创建窗口
@@ -51,10 +49,19 @@ public class Functional_Plain_Launcher1{
         L.setVisible(true);
         //随关随停
         L.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+
+        // 创建一个标签
+        JLabel label = new JLabel("欢迎使用Java窗口");
+
+        // 创建一个按钮
+        JButton button = new JButton("点击我");
+        // 设置按钮的位置
+        button.setBounds(5, 5, 0, 0);
+
+        // 将标签和按钮添加到窗口中
+        L.add(label);
+        L.add(button);
     }
-
-
-
 
     public static void main (String[] args) {
         //创建窗口类对象
