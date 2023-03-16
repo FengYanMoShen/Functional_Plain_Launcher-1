@@ -16,10 +16,9 @@ public class Functional_Plain_Launcher1{
         System.out.println("ID:" + ID + "\nversion:" + version);
         author();
     }
-
     //抽取随机数字
     public static void destiny() {
-        int randomNum =(int) (Math.random() * 100); // 生成0~100之间的随机数
+        int randomNum = (int) Math.round(Math.random() * 100); // 生成0~100之间的随机数
         int outputNum = switch (randomNum / 10) {
             case 0 -> 5;
             case 1 -> 15;
@@ -87,5 +86,16 @@ public class Functional_Plain_Launcher1{
             result = Math.pow(result, exponent);
         }
         System.out.println(result);
+
+        double x = Math.PI / 4; // 角度为 45 度
+
+        double sinValue = Math.sin(x);
+        double cosValue = Math.cos(x);
+        double tanValue = Math.tan(x);
+
+        System.out.println("正弦值：" + sinValue);
+        System.out.println("余弦值：" + cosValue);
+        System.out.println("正切值：" + tanValue);
     }
+
 }
