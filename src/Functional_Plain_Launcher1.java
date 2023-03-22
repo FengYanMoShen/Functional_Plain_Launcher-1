@@ -64,9 +64,7 @@ public class Functional_Plain_Launcher1{
         button.setBackground(Color.BLUE); // 设置按钮的背景颜色
         panel.add(button, BorderLayout.NORTH);
 
-        // 将面板添加到窗口中
-        frame.add(panel);
-
+        frame.add(panel);//将面板添加到窗口中
     }
 
     public static void main (String[] args) {
@@ -98,5 +96,4 @@ public class Functional_Plain_Launcher1{
         System.out.println("正切值：" + tanValue);
         new GeometryDraw();
     }
-
 }
