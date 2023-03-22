@@ -2,7 +2,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.Scanner;
 
-
 public class Functional_Plain_Launcher1{
     public static String ID = "Functional_Plain_Launcher1";
     public static String version = "0.0.2";
@@ -38,45 +37,32 @@ public class Functional_Plain_Launcher1{
 
     //创建窗口类
     public static void window() {
-        //创建窗口
-        JFrame frame = new JFrame();
-        //窗口标题
-        frame.setTitle(ID);
-        //窗口大小
-        frame.setSize(800, 610);
-        //居中
-        frame.setLocationRelativeTo(null);
-        //窗口可见
-        frame.setVisible(true);
-        //随关随停
-        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        JFrame frame = new JFrame();//创建窗口
+        frame.setTitle(ID);//窗口标题
+        frame.setSize(800, 610);//窗口大小
+        frame.setLocationRelativeTo(null);//居中
+        frame.setVisible(true);//窗口可见
+        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);//随关随停
 
-
-        // 创建一个面板
-        JPanel panel = new JPanel(new BorderLayout());
+        JPanel panel = new JPanel(new BorderLayout());// 创建一个面板
         panel.setBounds(10, 10, 1, 5); // 设置位置和大小
-        final String text1 = "                                   ";
-        String text2 = text1 + text1 + "欢迎使用 Java 窗口";
-        // 创建一个标签
-        JLabel label = new JLabel(text2);
+        String text2 = "欢迎使用 Java 窗口";
+
+        JLabel label = new JLabel(text2);// 创建一个标签
         panel.add(label, BorderLayout.CENTER);
 
-        // 创建一个按钮
-        JButton button = new JButton("点击我");
+        JButton button = new JButton("点击我");// 创建一个按钮
         Font font = null;
         try {
-
             font = new Font("乾隆行楷字体", Font.BOLD, 100);
-        } catch (Exception e) {
+        }catch(Exception e){
             // 处理异常
         }
-
         button.setFont(font);
         button.setBounds(10, 10, 1, 5); // 设置按钮的位置和大小
         button.setForeground(Color.ORANGE); // 设置按钮的背景颜色
         button.setBackground(Color.BLUE); // 设置按钮的背景颜色
         panel.add(button, BorderLayout.NORTH);
-
 
         // 将面板添加到窗口中
         frame.add(panel);
