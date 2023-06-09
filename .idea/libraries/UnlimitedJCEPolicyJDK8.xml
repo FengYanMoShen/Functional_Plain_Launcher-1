@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="UnlimitedJCEPolicyJDK8">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/jce_policy-8/UnlimitedJCEPolicyJDK8/US_export_policy.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jce_policy-8/UnlimitedJCEPolicyJDK8/local_policy.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
